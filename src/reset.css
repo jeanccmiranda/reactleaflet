@@ -1,0 +1,134 @@
+/* Reset CSS */
+
+/* Redefinindo a margem e preenchimento padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo uma fonte base para melhor consistência */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Removendo decorações de link padrão (sublinhado) */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Definindo a cor do texto padrão e o fundo para uma melhor legibilidade */
+  body {
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* Limpando as listas não ordenadas e ordenadas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Removendo a formatação padrão de cabeçalhos */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  
+  /* Removendo bordas em elementos de imagem */
+  img {
+    border: 0;
+  }
+  
+  /* Evitando que elementos de formulário tenham margens e preenchimentos indesejados */
+  input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Removendo decoração de botões */
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Redefinindo estilos de lista para evitarem margens indesejadas */
+  li {
+    list-style: none;
+  }
+  
+  /* Limpando qualquer formatação de legenda de elementos de formulário */
+  legend {
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+  }
+  
+  /* Definindo margens e preenchimento zero para tabelas */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Limpando estilos para elementos incorporados (por exemplo, vídeos e mapas do Google) */
+  embed,
+  iframe,
+  object,
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Adicionando uma redefinição comum para elementos HTML5 */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  
+  /* Limpando a formatação do botão de saída HTML5 */
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  input[type="file"]::-webkit-file-upload-button,
+  input[type="image"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  /* Redefinindo a formatação de elementos HTML5 para o IE */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration,
+  input[type="search"]::-webkit-search-clear-button {
+    display: none;
+  }
+  
+  /* Redefinindo estilos para elementos não suportados em alguns navegadores */
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  

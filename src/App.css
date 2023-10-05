@@ -1,0 +1,61 @@
+@import 'leaflet/dist/leaflet.css';
+@import url('./reset.css');
+
+#root {
+    --body-bg: #f8f8f8;
+    --primary-bg: #fff;
+    --primary-border: 1px solid #e7eaed;
+    --primary-border-radius: 0.25rem;
+    --btn-primary-color: #08088A;
+    --btn-hover-color: #0040FF;
+    --btn-border: 1px solid #08088A;
+    --btn-border-radius: 0.5em;
+}
+
+#root{
+    height: 100vh;
+    background: var(--body-bg);
+}
+
+
+main {
+    display: flex;
+}
+
+.map {
+    flex: 1 1 50vw;
+    min-width: 50vw;
+    width: 100vw;
+    height: 90vh;
+    margin: 1em 0em 1em 1em;
+}
+
+
+.marker_details {
+    flex: 0 0 50vw;
+    width: 50vw;
+    height: 600px;
+    margin: 1em;
+    padding: 1em;
+    background: var(--primary-bg);
+    border: var(--primary-border);
+    border-radius: var(--primary-border-radius);
+}
+
+.marker_popup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.btn_details, .btn_close {
+    padding: 0.5em;
+    color: white;
+    border: var(--btn-border);
+    background-color: var(--btn-primary-color);
+    border-radius: var(--btn-border-radius);
+}
+
+.btn_details:hover, .btn_close:hover {
+    background-color: var(--btn-hover-color);
+    border: 1px solid var(--btn-hover-color);
+}
